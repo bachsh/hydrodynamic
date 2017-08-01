@@ -129,7 +129,7 @@ def twoPointCorr(D, sigma, rhoL=0.4, rhoR=0.6, E=0, sigmaPrime=None, x=None, rho
     """
     Calculates the 2-point correlation function for a 1D system.
     D, sigma - Diffusion and mobility coefficients (must supply functions even if they are constant)
-    sigmaPrime - Derivative of the mobility w.r.t. the density (d\sigma / d\rho)
+    sigmaPrime - Derivative of the mobility w.r.t. the density (d\sigma / d\rho). Only needed if E is not 0.
     rhoL, rhoR - boundary conditions.
     E - bulk field
     """
@@ -218,4 +218,3 @@ if __name__ == "__main__":
     plt.legend()
 
     plt.show()
-    
